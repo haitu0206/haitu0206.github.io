@@ -1,0 +1,168 @@
+body{
+    margin-left: 10%;
+    margin-right: 10%;  
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.trang{
+    background-color: bisque;
+}
+/* -----------------------------logo và tên -----------------------------------*/
+#dau{
+    display: flex;
+    
+}
+#logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 0.5vw;
+    margin-top: 0.5vw; 
+}
+#tentruong{
+    font-family: 'Cinzel Decorative', serif;
+    margin-left: 5%;
+    margin-top: 10px;
+    font-size: 50px;
+    color: #d32f2f;
+    text-transform: uppercase;
+}
+/* -------------------Menu và ảnh--------------------------------------- */
+/* Menu */
+.menu{
+    position: absolute;
+    color:white; 
+    text-align: left;  
+}
+.menu1{
+    display: flex;
+    position: relative;
+    background-color: #d32f2f;
+    height: 50px;
+    width: 250px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.menu2 li{
+    padding: 10px ;
+}
+.menu2{
+    display: none;
+    background-color: #d32f2f;
+    list-style-type: none;
+    width: 15vw;
+    border: 1px,solid, black;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 100%;
+    padding: 10px;
+}
+.menu1:hover  .menu2{
+    display: block;
+}
+.menu3{
+    display: none;
+    background-color: #d32f2f;
+    list-style-type: none;
+    width: 15vw;
+    border: 1px,solid, black;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 100%;
+    padding: 10px;
+}
+.menu2:hover .menu3{
+    display: block;
+}
+/* Ảnh trường */
+.around{
+    position: relative;
+    display: flex;
+
+}
+
+.anhtruong{
+    background-color: aqua;
+    height: 300px;
+    width: 54vw;
+    position: absolute;
+    top: 12%;
+    left: 25vw;
+}
+#anhtruong{
+    height: 100%;
+    width: 100%;
+}
+/* -------------------nội dung trang--------------------------------------- */
+.gt{
+    background-color: #d32f2f;
+    height: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 30%;
+}
+/* tiêu đề */
+.tieude_gt{
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.tamgiac{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 60px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 60px 0 0 800px;
+    border-color: bisque transparent transparent transparent;
+}
+/* nội dung */
+.nd_gt{
+    padding: 2%;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    gap: 20px;
+}
+hr{
+    border-top: 2px solid #d32f2f;
+}
+.nd_gt img{
+    width: 30%;
+    height: 200px;
+}
+.nd_gt h3 {
+    text-transform: uppercase;
+}
+.nd_gt h3 a {
+    color: black;
+}
+.nd_gt h3 a:hover {
+    color:#d32f2f;
+}
+/* địa chỉ */
+.dchi{
+    background-color: #d32f2f;
+    color: white;
+    width: 100%;
+    font-size: 16px;
+}
+.dchi h2{
+    margin-left: 2%;
+    font-size: 20px;
+}
+.dchi p{
+    margin-left: 2%;
+}

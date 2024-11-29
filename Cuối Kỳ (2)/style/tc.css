@@ -1,0 +1,361 @@
+body{
+    margin: 0 auto;  
+    width: 90% ;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.trang{
+    background-color: bisque;
+}
+/* -----------------------------logo và tên -----------------------------------*/
+#dau{
+    display: flex;
+    
+}
+#logo{
+    width: 10%;
+    height: auto;
+    margin: 1%;
+    
+}
+#tentruong{
+    font-family: 'Cinzel Decorative', serif;
+    margin-left: 5%;
+    margin-top: 2%;
+    font-size: 5vw;
+    color:#d32f2f;
+    text-transform: uppercase;
+}
+/* -------------------Menu và ảnh--------------------------------------- */
+.around{
+    width: 100%;
+    height: 300px ;
+    display: flex;
+    
+    
+    
+   
+    
+}
+/* Menu */
+
+.menu{
+    position: relative;
+    color:white; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    list-style-type: none;
+    display: flex;
+    margin: 0; 
+    padding: 0;
+}
+.menu1{
+    
+    position: relative;
+    /* background-color: #d32f2f; */
+    height: 60px;
+    width: 100%;
+    /* border: 1px solid black; */
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    display: flex;
+
+}
+
+.menu2{
+    display: none;
+    background-color: #d32f2f;
+    list-style-type: none;
+    width: 50%;
+    height: 60px;
+    
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin: 0; 
+    padding: 0;
+    
+    
+}
+.menu1:hover  .menu2{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.menu3{
+    display: none;
+    background-color: #d32f2f;
+    list-style-type: none;
+    width: 80%;
+    
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    margin: 0; 
+    padding: 0;
+    top: 0;
+    left: 100%;
+    
+}
+.menu2:hover .menu3{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Ảnh trường */
+
+
+.anhtruong{
+    background-color: aqua;
+    height:100%;
+    width: 75%;
+    
+}
+#anhtruong{
+    height: 100%;
+    width: 100%;
+}
+/* ----------------------------------trang chí---------------------------- */
+.tg {
+    position: absolute;
+    bottom: 45px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 0; 
+    
+}
+#mn1{
+    background-color: #951A1D;
+}
+#mn2{
+    background-color:#C02433 ;
+}
+#mn3{
+    background-color: #D23544;
+}
+#tg1{
+    border-color: #951A1D transparent transparent transparent;
+}
+#tg2{
+    border-color: #C02433 transparent transparent transparent;
+}
+#tg3{
+    border-color: #D23544 transparent transparent transparent;
+}
+/* -------------------nội dung trang--------------------------------------- */
+.tb{
+    background-color: #d32f2f;
+    height: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.tamgiac{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 60px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 60px 0 0 800px;
+    border-color: bisque transparent transparent transparent;
+}
+.tieude_nd{
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+/* bảng tin tức */
+.nd{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+}
+
+.trai{
+    flex: 3;
+    background: #fff;
+    border-radius: 2%;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0, 0.2);
+    padding: 1px;
+    margin-left: 1%;
+}
+.hd1{
+    position: relative;
+}
+.anh_hd1{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+.tieude_hd1{
+    position:absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.giua{
+    flex: 4;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0, 0.1);
+}
+.giua h3{
+    font-size: 20px;
+    color: #d32f2f;
+    margin-bottom: 10px;
+}
+.giua p{
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.phai{
+    flex: 3;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0, 0.1);
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.sdt h3{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color:#d32f2f;
+}
+.sdt ul {
+    list-style: none;
+}
+.sdt ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* bảng thông báo */
+#tb1{
+    margin-top: 2%;
+    width: 100%;
+}
+.tin{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nd_tin{
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px (0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    max-width: 30%;
+    max-height: 25%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.anh_tin{
+    position: relative;
+}
+.anh_tin img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.anh_tin .ngay{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #d32f2f;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+.anh_tin .ngay .p{
+    font-size: 10px;
+}
+
+.ndtt{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ndtt h3{
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+.ndtt p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+/* tin tuyển sinh */
+.ts{
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 1%;
+    width: 900px;
+}
+.tieude_ts{
+    background-color: #d32f2f;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    /* display: inline-block;
+    position: absolute; */
+    top: -10px;
+    left: 20px;
+}
+.nd_ts{
+    padding: 50px 20px 20px;
+    font-size: 14px;
+    color: #333;
+}
+/* địa chỉ */
+.dchi{
+    background-color: #d32f2f;
+    color: white;
+    width: 100%;
+    font-size: 16px;
+}
+.dchi h2{
+    margin-left: 2%;
+    font-size: 20px;
+}
+.dchi p{
+    margin-left: 2%;
+}
